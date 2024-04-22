@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
 
     // Obtenim l'InputStream. És com el Scanner però llegeix del socket.
     // En aquest exemple no l'utilitzarem, però seria per a llegir el que ens envia el servidor
-    //val input = BufferedReader(InputStreamReader(echoSocket.getInputStream()))
+    val input = BufferedReader(InputStreamReader(sck.getInputStream()))
 
     // Equivalent al Scanner per a llegir de consola
     val stdIn = BufferedReader(InputStreamReader(System.`in`))
@@ -23,6 +23,8 @@ fun main(args: Array<String>) {
     inputLine = stdIn.readLine()
     while (inputLine != null) {
         out.println(inputLine)
+        var missatge :String = input.readLine()
+        println(missatge)
         inputLine = stdIn.readLine()
     }
 
