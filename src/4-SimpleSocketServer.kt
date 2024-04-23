@@ -25,6 +25,7 @@ fun main(args: Array<String>) {
     var inputLine: String = input.readLine()
     while (inputLine != null) {
         println(inputLine)
+        out.println("M'han dit $inputLine")
         inputLine = input.readLine()
     }
 

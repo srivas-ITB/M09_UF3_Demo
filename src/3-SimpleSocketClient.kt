@@ -19,6 +19,10 @@ fun main(args: Array<String>) {
 
     var inputLine: String
 
+    //Mostra el missatge de benvinguda del servidor
+    inputLine = input.readLine()
+    println(inputLine)
+
     // Tot el text que escrivim a la consola, s'enviarà pel socket
     inputLine = stdIn.readLine()
     while (inputLine != null) {

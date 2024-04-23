@@ -18,6 +18,7 @@ class ServerEcho:Thread, Runnable {
 
         // Obtenim el buffer de sortida, on escriurem el que volem enviar al client
         val out = PrintWriter(socket.getOutputStream(), true)
+        out.println("Hola! Ets el client $numConnexio")
 
         var inputLine: String = input.readLine()
         while (inputLine != null) {
